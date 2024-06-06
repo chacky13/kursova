@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Your Role!</title>
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Choose Your Role!</h1>
+  <form method="get" action="/get-actionstud">
+    <button type="submit" class="btn btn-primary">Student</button>
+  </form>
+  <br>
+  <form method="get" action="/get-action">
+    <button type="submit" class="btn btn-primary">Deanery Employee</button>
+  </form>
+</div>
+</body>
+</html>
